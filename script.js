@@ -40,3 +40,9 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
   document.querySelector('.score').textContent = '20';
 });
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    document.querySelector('.check').click();
+  }
+});
